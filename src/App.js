@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import poster from './assets/Poster.png'
 import './App.css';
-//import Home from './pagedraw/landing_page'
-import Home from './handwritten/Home';
+import Home from './Home';
 
 class App extends Component {
   constructor(){

@@ -7,6 +7,7 @@ body {
     font-family: 'Muli', sans-serif;
     line-height: 1.75rem;
     margin: 0;
+    background-image: url("./src/assets/background.png");
 }
 
 p {
