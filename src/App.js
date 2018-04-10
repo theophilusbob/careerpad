@@ -19,7 +19,7 @@ class App extends Component {
           address={this.state.address} 
         /> */
       <div>
-        <Route path={process.env.PUBLIC_URL+'/'} exact={true} component={Home}/>
+        <Route path="/" exact={true} component={Home}/>
         <Route path={process.env.PUBLIC_URL+'/register'} component={Form}/>
       </div>
     );
