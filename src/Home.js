@@ -54,7 +54,7 @@ class Home extends Component {
                                 <div className="register">
                                     <span>You can register now for free!</span>
                                     <br></br>
-                                    <Link to="/register">
+                                    <Link to="theophilusbob.github.io/careerpad/register">
                                         <button>I want to join the event</button>
                                     </Link>
                                 </div>

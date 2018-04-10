@@ -19,8 +19,8 @@ class App extends Component {
           address={this.state.address} 
         /> */
       <div>
-        <Route path="/" exact={true} component={Home}/>
-        <Route path="/register" component={Form}/>
+        <Route path="theophilusbob.github.io/careerpad" exact={true} component={Home}/>
+        <Route path="theophilusbob.github.io/careerpad/register" component={Form}/>
       </div>
     );
   }
