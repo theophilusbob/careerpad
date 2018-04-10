@@ -54,7 +54,7 @@ class Home extends Component {
                                 <div className="register">
                                     <span>You can register now for free!</span>
                                     <br></br>
-                                    <Link to="theophilusbob.github.io/careerpad/register">
+                                    <Link to={process.env.PUBLIC_URL+'/register'}>
                                         <button>I want to join the event</button>
                                     </Link>
                                 </div>
