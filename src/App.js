@@ -18,9 +18,11 @@ class App extends Component {
           time={this.state.time}
           address={this.state.address} 
         /> */
+        
       <div>
+        
         <Route path="/" exact={true} component={Home}/>
-        <Route path={process.env.PUBLIC_URL+'/register'} component={Form}/>
+        <Route path="/register" component={Form}/>
       </div>
     );
   }
