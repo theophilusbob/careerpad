@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './home.css';
 import {Link} from 'react-router-dom';
-import './home.css';
 import poster from './assets/Poster.png';
 
 class Home extends Component {

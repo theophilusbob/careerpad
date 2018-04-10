@@ -1,9 +1,11 @@
 .poster {
     margin: 0;
+    width: 100%;
     height: 100%;
-    position: relative;
-    
+    position: fixed;
+    z-index: -1;
 }
+
 
 .poster img {
     width: 100%;
@@ -12,11 +14,50 @@
 }
 
 .translucent {
-    background-color: rgba(51, 51, 51, 0.75);
+    background-color: rgba(23, 23, 23, 0.9);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(12px);
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 24rem 5rem 24rem;
+}
+
+
+.form_item {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+form {
+    flex-direction: column;
+    background: white;
+    padding: 3rem;
+    box-shadow: 0px 30px 45px rgba(0, 0, 0, 0.5);
+}
+
+label, input {
+    width: 100%;
+}
+
+textarea {
+    max-width: 540px;
+}
+
+input, textarea{
+    margin-bottom: 1rem;
+    height: 3rem;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #979797;
+    font-size: 1rem;
+    color: #979797;
 }
