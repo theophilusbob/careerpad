@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import './home.css';
 import {Link} from 'react-router-dom';
-import poster from './assets/Poster.png';
+import firebase from './firebase.js'; 
+
 
 class Home extends Component {
     constructor(){
-        super();
+        super();   
         this.state = {
-          img_src: poster,
-          title: "Jagongan Media Rakyat 2018",
+          img_src: "",
+          title: "myJudul",
           description: "Jagongan Media Rakyat (JMR) adalah gelaran dua tahunan yang diprakarsai oleh Combine Resource Institution sejak 2010. Jagongan Media Rakyat merupakan ruang pertemuan berbagai pihak untuk membahas isu­-isu sosial kemasyarakatan dengan informasi sebagai mediumnya.",
           date: "8-10 Maret 2018",
           venue: "Jogja National Museum (JNM)",
@@ -16,6 +17,28 @@ class Home extends Component {
           address: "Wirobrajan, Jogja 55253"
         };
       }
+
+    componentDidMount() {
+        const ref = firebase.database().ref("project");
+        ref.on('value', (snapshot) => {
+            var img_src = snapshot.child("img_src").val();
+            var title = snapshot.child("title").val();
+            var description = snapshot.child("description").val();
+            var date = snapshot.child("date").val();
+            var venue = snapshot.child("venue").val();
+            var time = snapshot.child("time").val();
+            var address = snapshot.child("address").val();
+
+            this.setState({title});
+            this.setState({img_src});
+            this.setState({description});
+            this.setState({date});
+            this.setState({venue});
+            this.setState({time});
+            this.setState({address});
+            
+          });
+    }
 
     render() {
         return (

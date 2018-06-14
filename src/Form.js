@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './form.css'
 import poster from './assets/Poster.png';
 
-
 class Form extends Component {
     render() {
         return (   
@@ -21,11 +20,11 @@ class Form extends Component {
                     <div className="form_item">
                     <p>Please please fill the form completely</p>
                     </div>
-
                     <form>
+                        
                         <label>
                             Name
-                            <input type="text" name="name" defaultValue="Type your real name"/>
+                            <input type='text' defaultValue='Some text' onFocus='this.value = ""' />
                         </label>
                         <label>
                             University

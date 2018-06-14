@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Muli:400,700">
+    <link rel="stylesheet" href="../src/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -28,6 +30,12 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <div class="spinner-wrapper">
+      <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+      </div>
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +47,19 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script>
+      $(document).ready(function() {
+      //Preloader
+      $(window).on("load", function() {
+      preloaderFadeOutTime = 500;
+      function hidePreloader() {
+      var preloader = $('.spinner-wrapper');
+      preloader.fadeOut(preloaderFadeOutTime);
+      }
+      hidePreloader();
+      });
+      });
+      </script>
   </body>
 </html>
