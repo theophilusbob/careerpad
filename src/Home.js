@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './home.css';
 import {Link} from 'react-router-dom';
 import firebase from './firebase.js'; 
+import ResponsiveMenu from 'react-responsive-navbar';
 
 
 class Home extends Component {
@@ -17,6 +18,7 @@ class Home extends Component {
           address: "Wirobrajan, Jogja 55253"
         };
       }
+
 
     componentDidMount() {
         const ref = firebase.database().ref("project");
@@ -36,17 +38,52 @@ class Home extends Component {
             this.setState({venue});
             this.setState({time});
             this.setState({address});
-            
           });
+          
     }
 
     render() {
         return (
-                <div className="main_container">
+                <div>
+                    <div className="header">
                         <div className="two_container">
-                            <div className="logo">
-                                <h2>CareerPad</h2>
-                            </div>
+                            <div className="logo">CareerPad</div>
+                        </div>
+
+                        <div className="two_container">
+                        <ResponsiveMenu
+                                    menuOpenButton={ 
+                                        <div className="container">
+                                            <div className="bar1"></div>
+                                            <div className="bar2"></div>
+                                            <div className="bar3"></div>
+                                        </div>
+                                        }
+                                    menuCloseButton={
+                                        <div className="container">
+                                            <div className="bar1"></div>
+                                            <div className="bar2"></div>
+                                            <div className="bar3"></div>
+                                        </div>
+                                    }
+                                    changeMenuOn="568px"
+                                    largeMenuClassName="large-menu-classname"
+                                    smallMenuClassName="small-menu-classname"
+                                    menu={
+                                    <ul className="menu">
+                                        <li>Vision</li>
+                                        <li>Our Process</li>
+                                        <li>Founder</li>
+                                        <li>About</li>
+                                    </ul>
+                                    }
+                                />
+                        </div>         
+                    </div>
+
+                    <div className="main_container">
+                        <div className="two_container">
+                            <div className="whitespace"></div>
                             <div className="contentItem"> 
                             <h1> {this.state.title} </h1>
                             </div>
@@ -68,7 +105,7 @@ class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="two_container">
+                        <div className="two_container right">
                             <div className="right_container">
                                 <div className="posterImage">
                                     <img alt="Gambar Poster" src={this.state.img_src}/>
@@ -77,7 +114,7 @@ class Home extends Component {
                                     <span>You can register now for free!</span>
                                     <br></br>
                                     <Link to="/register">
-                                        <button>I want to join the event</button>
+                                        <button>I want to join the program</button>
                                     </Link>
                                 </div>
                             </div>
@@ -86,6 +123,8 @@ class Home extends Component {
                         </div>
                         </div>
                     </div>
+                </div>
+                
         );
     }
 }

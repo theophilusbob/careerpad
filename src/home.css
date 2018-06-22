@@ -1,5 +1,4 @@
 html {
-    height: 100%;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -23,21 +22,73 @@ h1, h2, h3 {
 }
 
 .logo {
-    margin-bottom: 10rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 140%;
+    padding-top: 1rem;
 }
+
+.menu {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+.menu li{
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    border-bottom: 2px solid black;
+}
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
 
 .main_container {
     display: flex;
     flex-direction: row;
     padding: 0 2rem 0 2rem;
-    height: 100vh;
+    max-height: 540px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem 0 2rem;
+    max-height: 8rem;
+}
+
+.whitespace {
+    height: 6rem;
 }
 
 .two_container {
     flex: 1;
     flex-grow: 1;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
     margin: 2rem;
+}
+
+.two_container.right {
+    margin-top: 0;
 }
 
 .contentItem {
@@ -71,7 +122,7 @@ h1, h2, h3 {
 }
 
 .posterImage {
-    height: 25rem;
+    height: 21rem;
 }
 
 .posterImage img {
@@ -114,15 +165,23 @@ button:hover {
 /* Responsive Design */
 
 @media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
+    and (min-width: 568px)
+    and (max-width: 1024px)
     and (-webkit-min-device-pixel-ratio: 1) {
     
         .main_container {
             display: flex;
             flex-direction: column;
             align-items: stretch;
-            padding: 2rem 7rem 0 7rem;
+            padding: 2rem 2rem 0 2rem;
+        }
+
+        .menu li{
+            display: inline;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            margin-right: 1rem;
+            cursor: pointer;
         }
 
         .contentItem {
@@ -148,8 +207,76 @@ button:hover {
 }
 
 @media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 480px)
+    and (min-width: 320px)
+    and (max-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+    
+        .menu {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            text-align: right;
+            padding: 0;
+        }
+        
+        .menu li{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            margin-right: 2rem;
+            cursor: pointer;
+        }
+        
+        .main_container {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            padding: 0;
+        }
+        
+
+        .two_container {
+            flex: 1;
+            flex-grow: 1;
+            margin: 1rem;
+        }
+
+        .contentItem {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .smallContentItem {
+            margin-bottom: 2rem;
+        }
+
+        .posterImage {
+            height: 15rem;
+        }
+
+        .register {
+            height: 100%;
+            padding: 0;
+            background-color: #171717;
+        }
+
+        .register span{
+            margin: 5%;
+        }
+
+        .footer {
+            visibility: visible;
+            text-align: center;
+            margin-top: 2rem;
+            opacity: 0.3;
+            font-size: 0.75rem;
+        }
+}
+
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
     

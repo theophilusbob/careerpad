@@ -8,17 +8,6 @@ class App extends Component {
   
   render() {
     return (
-
-      /*<Home 
-          title={this.state.title}
-          description={this.state.description}
-          img_src={this.state.img_src}
-          date={this.state.date}
-          venue={this.state.venue}
-          time={this.state.time}
-          address={this.state.address} 
-        /> */
-        
       <div>
         
         <Route path="/" exact={true} component={Home}/>
