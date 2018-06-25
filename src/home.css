@@ -77,6 +77,10 @@ h1, h2, h3 {
     max-height: 8rem;
 }
 
+.logo_lite {
+    visibility: hidden;
+}
+
 .whitespace {
     height: 6rem;
 }
@@ -315,6 +319,10 @@ button:hover {
 
         .logo_lite h1{
             line-height: 110%;
+        }
+
+        .logo_lite {
+            visibility: visible;
         }
 
         .logo_underline{
