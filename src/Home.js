@@ -48,25 +48,29 @@ class Home extends Component {
                     <div className="header">
                         <div className="two_container">
                             <div className="logo">CareerPad</div>
+                            <div className="logo_lite">
+                                <h1>C</h1>
+                                <div className="logo_underline"></div>
+                            </div>    
                         </div>
 
                         <div className="two_container">
                         <ResponsiveMenu
                                     menuOpenButton={ 
-                                        <div className="container">
+                                        <div className="hamburger">
                                             <div className="bar1"></div>
                                             <div className="bar2"></div>
                                             <div className="bar3"></div>
                                         </div>
                                         }
                                     menuCloseButton={
-                                        <div className="container">
+                                        <div className="hamburger">
                                             <div className="bar1"></div>
                                             <div className="bar2"></div>
                                             <div className="bar3"></div>
                                         </div>
                                     }
-                                    changeMenuOn="568px"
+                                    changeMenuOn="768px"
                                     largeMenuClassName="large-menu-classname"
                                     smallMenuClassName="small-menu-classname"
                                     menu={
@@ -113,9 +117,9 @@ class Home extends Component {
                                 <div className="register">
                                     <span>You can register now for free!</span>
                                     <br></br>
-                                    <Link to="/register">
+                                    <a target="_blank" href="https://www.google.com/intl/id_id/forms/about/">
                                         <button>I want to join the program</button>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                             <div className="footer">

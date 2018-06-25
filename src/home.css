@@ -31,7 +31,7 @@ h1, h2, h3 {
 
 .menu {
     list-style-type: none;
-    text-align: left;
+    text-align: right;
     padding: 0;
 }
 
@@ -39,7 +39,7 @@ h1, h2, h3 {
     display: inline;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    margin-right: 2rem;
+    margin-left: 2rem;
     cursor: pointer;
 }
 
@@ -48,9 +48,10 @@ h1, h2, h3 {
 }
 
 
-.container {
+.hamburger {
     display: inline-block;
     cursor: pointer;
+    float: right;
 }
 
 .bar1, .bar2, .bar3 {
@@ -180,8 +181,12 @@ button:hover {
             display: inline;
             font-family: 'Poppins', sans-serif;
             font-size: 1rem;
-            margin-right: 1rem;
+            margin-left: 1rem;
             cursor: pointer;
+        }
+
+        .logo_lite {
+            display: none;
         }
 
         .contentItem {
@@ -212,6 +217,10 @@ button:hover {
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
     
+        .header {
+            padding: 1rem 0 0 0;
+        }
+        
         .menu {
             display: flex;
             flex-direction: column;
@@ -223,7 +232,7 @@ button:hover {
         .menu li{
             font-family: 'Poppins', sans-serif;
             font-size: 1rem;
-            margin-right: 2rem;
+            margin-left: 1rem;
             cursor: pointer;
         }
         
@@ -279,7 +288,7 @@ button:hover {
     and (max-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
-    
+        
         .main_container {
             display: flex;
             flex-direction: column;
@@ -287,10 +296,38 @@ button:hover {
             padding: 0;
         }
 
-        .two_container {
-            flex: 1;
-            flex-grow: 1;
-            margin: 1rem;
+        .header {
+            padding: 0.75rem 0 0 0;
+        }
+
+        .two_container .logo {
+            display: none;
+        }
+
+        .two_container .menu{
+            width: 160px;
+        }
+
+
+        .two_container .logo_lite {
+            text-align: left;
+        }
+
+        .logo_lite h1{
+            line-height: 110%;
+        }
+
+        .logo_underline{
+            border-bottom: #000 solid 5px;
+            width: 1.5rem;
+        }
+
+        .menu {
+            text-align: right;
+        }
+
+        .menu li {
+            margin-top: 1rem;
         }
 
         .contentItem {
