@@ -11,7 +11,7 @@ body {
 }
 
 p {
-    color: gray;
+    color: #333;
 }
 
 h1, h2, h3 {
@@ -47,7 +47,6 @@ h1, h2, h3 {
     border-bottom: 2px solid black;
 }
 
-
 .hamburger {
     display: inline-block;
     cursor: pointer;
@@ -77,6 +76,15 @@ h1, h2, h3 {
     max-height: 8rem;
 }
 
+.link {
+    text-decoration: none;
+    color: #000;
+}
+
+.active {
+    border-bottom: #000 solid 2px;
+}
+
 .logo_lite {
     visibility: hidden;
 }
@@ -94,6 +102,17 @@ h1, h2, h3 {
 
 .two_container.right {
     margin-top: 0;
+}
+
+.contentItem.process{
+    align-items: center;
+    justify-content: center;
+    border: #000 solid 1px;
+}
+
+.contentItem.arrow {
+    align-items: center;
+    justify-content: center;
 }
 
 .contentItem {
@@ -124,6 +143,14 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     box-shadow: 0 30px 45px rgba(0,0,0,.25);
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    background: url('./assets/arief@2x.png') no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
 }
 
 .posterImage {
