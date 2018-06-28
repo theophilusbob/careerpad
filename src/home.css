@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    font-family: 'Muli', sans-serif;
-    line-height: 1.75rem;
+    font-family: 'Source Sans Pro', serif;
+    line-height: 30px;
     margin: 0;
     background-image: url("assets/background.png");
     background-size: cover;
@@ -12,6 +12,8 @@ body {
 
 p {
     color: #333;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 h1, h2, h3 {
@@ -19,6 +21,11 @@ h1, h2, h3 {
     font-weight: 700;
     line-height: 140%;
     margin: 0;
+}
+
+span {
+    font-size: 18px;
+    margin-right: 0.5rem;
 }
 
 .logo {
@@ -61,12 +68,15 @@ h1, h2, h3 {
     transition: 0.4s;
 }
 
+.full_container {
+    display: flex;
+    flex-direction: column;
+}
 
 .main_container {
     display: flex;
     flex-direction: row;
     padding: 0 2rem 0 2rem;
-    max-height: 540px;
 }
 
 .header {
