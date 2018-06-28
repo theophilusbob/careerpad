@@ -8,12 +8,12 @@ class Home extends Component {
         super();   
         this.state = {
           img_src: "",
-          title: "myJudul",
-          description: "Jagongan Media Rakyat (JMR) adalah gelaran dua tahunan yang diprakarsai oleh Combine Resource Institution sejak 2010. Jagongan Media Rakyat merupakan ruang pertemuan berbagai pihak untuk membahas isu­-isu sosial kemasyarakatan dengan informasi sebagai mediumnya.",
-          date: "8-10 Maret 2018",
-          venue: "Jogja National Museum (JNM)",
-          time: "16:00 WIB",
-          address: "Wirobrajan, Jogja 55253"
+          title: "",
+          description: "",
+          date: "",
+          venue: "",
+          time: "",
+          address: ""
         };
       }
 
@@ -56,14 +56,13 @@ class Home extends Component {
                             </div>
                             <div className="contentItem">
                                 <div className="smallContentItem">
-                                    <strong>{this.state.date}</strong>
+                                    
                                     <div className="separator"></div>
-                                    <strong>{this.state.time}</strong>
+                                    <h3>{this.state.time}</h3>
                                 </div>
                                 <div className="smallContentItem right">
-                                    <strong>{this.state.venue}</strong>
                                     <div className="separator right"></div>
-                                    <strong>{this.state.address}</strong>
+                                    <h3>{this.state.address}</h3>
                                 </div>
                             </div>
                         </div>

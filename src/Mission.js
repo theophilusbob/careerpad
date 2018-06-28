@@ -26,7 +26,7 @@ const Mission = () => (
                     </div>
                 </div>
                 <div className="two_container">
-                </div> 
+                    </div>
             </div>
 );
             

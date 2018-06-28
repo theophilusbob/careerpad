@@ -2,7 +2,9 @@ import React from 'react'
 import arrow from './assets/arrow.svg'
 
 const Process = () => (
-    <div className="main_container">
+    <div className="full_container">
+    <div className="whitespace"></div>
+        <div className="main_container">
                 <div className="two_container">
                     <div className="contentItem">
                         <h1>How It Works</h1>
@@ -58,6 +60,7 @@ const Process = () => (
                     </div>
                 </div> 
             </div>
+        </div>
 );
             
 export default Process

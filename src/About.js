@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import rightArrow from './assets/right_arrow.svg'
 
 const About = () => (
-    <div className="full_container">
     <div className="main_container">
                 <div className="two_container">
                     <div className="contentItem">
@@ -9,20 +10,26 @@ const About = () => (
                     </div>
                     <div className="thickSeparator"/>
                     <div className="contentItem">
-                        <p>
+                        <h2>
                         The premier collaboration platform that connect all the stakeholders of Indonesian digital industry to develop and nurture digital talents in order to overcome the talent shortage. 
-                        </p>
+                        </h2>
                     </div>
                     <div className="contentItem">
                         <p>
                         Careerpad is created by the industry players, for the advancement of digital ecosystem in the country. 
                         </p>
                     </div>
+
+                    <div className="smallContentItem">
+                        <Link className="link" to="/founder">
+                            <span>Founder</span>
+                            <img src={rightArrow} />
+                        </Link>
+                    </div>
                 </div>
                 <div className="two_container">
                 </div> 
         </div>
-    </div>
 );
             
 export default About
