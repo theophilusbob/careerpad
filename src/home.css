@@ -155,11 +155,9 @@ span {
     box-shadow: 0 30px 45px rgba(0,0,0,.25);
 }
 
-.avatar {
+.avatar img{
     width: 140px;
     height: 140px;
-    background: url('./assets/arief@2x.png') no-repeat;
-    background-size: cover;
     margin-bottom: 2rem;
 }
 
