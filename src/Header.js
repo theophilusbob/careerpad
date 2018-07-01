@@ -8,7 +8,7 @@ const Header = () => (
         <div className="two_container">
             <div className="logo"><Link className="link" to="/">CareerPad</Link></div>
                 <div className="logo_lite">
-                    <h1>C</h1>
+                    <h1><Link className="link" to="/">C</Link></h1>
                     <div className="logo_underline"></div>
                 </div>    
             </div>
@@ -30,8 +30,8 @@ const Header = () => (
                     </div>
                 }
                 changeMenuOn="768px"
-                    largeMenuClassName="large-menu-classname"
-                    smallMenuClassName="small-menu-classname"
+                    largeMenuClassName=""
+                    smallMenuClassName=""
                     menu={
                         <ul className="menu">
                             <li><NavLink className="link" activeClassName="active" to="/about">About</NavLink></li>                          

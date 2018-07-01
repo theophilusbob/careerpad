@@ -55,7 +55,6 @@ span {
 }
 
 .hamburger {
-    display: inline-block;
     cursor: pointer;
     float: right;
 }
