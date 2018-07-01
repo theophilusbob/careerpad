@@ -16,7 +16,7 @@ const Process = () => (
                         </p>
                     </div>
                     <div className="contentItem arrow">
-                        <img src={arrow} />
+                        <img src={arrow} alt="Arrow"/>
                     </div>
                     <div className="contentItem process">
                         <p>
@@ -24,7 +24,7 @@ const Process = () => (
                         </p>
                     </div>
                     <div className="contentItem arrow">
-                        <img src={arrow} />
+                        <img src={arrow} alt="Arrow"/>
                     </div>
                     <div className="contentItem process">
                         <p>
@@ -43,7 +43,7 @@ const Process = () => (
                         </p>
                     </div>
                     <div className="contentItem arrow">
-                        <img src={arrow} />
+                        <img src={arrow} alt="Arrow"/>
                     </div>
                     <div className="contentItem process">
                         <p>
@@ -51,7 +51,7 @@ const Process = () => (
                         </p>
                     </div>
                     <div className="contentItem arrow">
-                        <img src={arrow} />
+                        <img src={arrow} alt="Arrow"/>
                     </div>
                     <div className="contentItem process">
                         <p>

@@ -23,7 +23,7 @@ const About = () => (
                     <div className="smallContentItem">
                         <Link className="link" to="/founder">
                             <span>Founder</span>
-                            <img src={rightArrow} />
+                            <img src={rightArrow} alt="Right Arrow"/>
                         </Link>
                     </div>
                 </div>

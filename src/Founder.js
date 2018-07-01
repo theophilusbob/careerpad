@@ -1,9 +1,13 @@
 import React from 'react'
+import Arief from './assets/founder/arief@2x.png'
+import Intan from './assets/founder/intan@2x.png'
+import Teguh from './assets/founder/teguh@2x.png'
 
 const Founder = () => (
     <div className="main_container">
                 <div className="two_container">
                     <div className="avatar">
+                        <img src={Arief} alt="Arief Avatar"/>
                     </div>
                     <div className="contentItem">
                         <h1>Arief Rakhmadani</h1>
@@ -23,6 +27,9 @@ const Founder = () => (
                 </div>
                 <div className="two_container">
                     <div className="avatar">
+                    <div className="avatar">
+                        <img src={Intan} alt="Intan Avatar"/>
+                    </div>
                     </div>
                     <div className="contentItem">
                         <h1>Intan Andini</h1>
@@ -42,6 +49,9 @@ const Founder = () => (
                 </div>
                 <div className="two_container">
                     <div className="avatar">
+                    <div className="avatar">
+                        <img src={Teguh} alt="Teguh Avatar" />
+                    </div>
                     </div>
                     <div className="contentItem">
                         <h1>Teguh Triguna</h1>
