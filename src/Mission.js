@@ -21,7 +21,7 @@ const Mission = () => (
                     <div className="separator"></div>
                     <div className="contentItem">
                         <p>
-                        Enable brands and agencies to find the best talents through accountable programs and supervised by the best mentors in the industry.
+                        Answer the talent shortage that plague the industry and hinder the digital transformation in Indonesia
                         </p>
                     </div>
                 </div>
