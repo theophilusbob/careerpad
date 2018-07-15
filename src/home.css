@@ -23,36 +23,90 @@ h1, h2, h3 {
     margin: 0;
 }
 
-span {
-    font-size: 18px;
+button span {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14pt;
     margin-right: 0.5rem;
 }
 
-.logo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 140%;
-    padding-top: 1rem;
+img.logo {
+    height: 45px;
 }
 
-.menu {
-    list-style-type: none;
-    text-align: right;
-    padding: 0;
-}
 
-.menu li{
-    display: inline;
+
+/* Navbar CSS*/
+
+nav {
+    width: 100%;
+    overflow: hidden;
+    padding: 2.5em 2.5em 3em 2.5em;
+  }
+  nav a {
+    color: #000;
+  }
+
+  nav a:visited {
+    color: #000;
+  }
+  nav .navWide {
+    display: none;
+    margin: 0 auto;
+
+  } 
+   nav .navWide .wideDiv {
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    margin-left: 2rem;
+     text-align: center;
+  }
+
+  nav .navWide .wideDiv a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 2rem; 
+  }
+
+  nav .navNarrow i {
+    float: left;
     cursor: pointer;
-}
+    color: #000;
+  }
+  nav .navNarrow .narrowLinks {
+    display: none;
+  }
 
-.menu li:hover {
-    border-bottom: 2px solid black;
-}
+  nav .navNarrow .narrowLinks a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    clear: left;
+    padding: 0.5em 0;
+  }
+  
+  @media (min-width: 660px) {
+    nav .navWide {
+      display: block;
+    }
+    nav .navNarrow {
+      display: none;
+    }
+  }
+
+/* Navbar CSS */
+
+.normal {
+    color: #000;
+    transition: color 0.5s ease; 
+  }
+
+  .normal:hover {
+    color: #F05456;
+    transition: color 0.5s ease; 
+  }
+
+  .active {
+    border-bottom: solid 1px #F05456;
+    color: #F05456;
+  }
 
 .hamburger {
     cursor: pointer;
@@ -70,11 +124,11 @@ span {
 .full_container {
     display: flex;
     flex-direction: column;
+    padding: 0rem 2rem 0 2rem;
 }
 
 .main_container {
     display: flex;
-    flex-direction: row;
     padding: 0 2rem 0 2rem;
 }
 
@@ -88,10 +142,6 @@ span {
 .link {
     text-decoration: none;
     color: #000;
-}
-
-.active {
-    border-bottom: #000 solid 2px;
 }
 
 .logo_lite {
@@ -126,7 +176,7 @@ span {
 
 .contentItem {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 1rem;
 }
 
@@ -149,6 +199,7 @@ span {
 }
 
 .right_container {
+    margin: 0 3rem 0 3rem;
     display: flex;
     flex-direction: column;
     box-shadow: 0 30px 45px rgba(0,0,0,.25);
@@ -161,7 +212,7 @@ span {
 }
 
 .posterImage {
-    height: 21rem;
+    height: 28.5rem;
 }
 
 .posterImage img {
@@ -171,9 +222,20 @@ span {
 }
 
 .register {
-    height: 6.5rem;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
     background-color: #171717;
-    padding: 1.5rem;
+    z-index: 1;
+    left: 50%;
+    top: 36rem;
+    transform: translate(-50%, -50%);
+}
+
+.register img {
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem;
 }
 
 .register span {
@@ -181,46 +243,54 @@ span {
 }
 
 button {
-    background-color: white;
-    width: 100%;
+    background: linear-gradient(100.85deg, #283891 0.25%, #F05456 91.29%);
+    width: 50%;
     height: 3rem;
     border: 0;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0 0 0;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+    color: white;
+    box-shadow: 0 20px 45px rgba(0,0,0,.25);
+    -webkit-transition: margin 0.2s ease-out;
+    -moz-transition: margin 0.2s ease-out;
+    -o-transition: margin 0.2s ease-out;
+    transition: margin 0.2s ease-out;
 }
 
 button:hover {
-    opacity: 0.9;
+    margin: 1.5rem 0 0 0.5rem;
 }
 
 .footer {
-    margin: 0;
-    visibility: hidden;
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+    opacity: 0.45;
+    font-size: 10pt;
 }
 
 
 /* Responsive Design */
 
 @media only screen
-    and (min-width: 568px)
+    and (min-width: 824px)
     and (max-width: 1024px)
     and (-webkit-min-device-pixel-ratio: 1) {
     
+        h1#careerpad_title {
+            font-size: 22pt;
+            text-align: left;
+        }
+
         .main_container {
             display: flex;
-            flex-direction: column;
             align-items: stretch;
             padding: 2rem 2rem 0 2rem;
         }
 
-        .menu li{
-            display: inline;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1rem;
-            margin-left: 1rem;
-            cursor: pointer;
+        .two_container {
+            padding: 0;
         }
 
         .logo_lite {
@@ -240,17 +310,73 @@ button:hover {
         }
 
         .footer {
-            visibility: visible;
             text-align: center;
-            margin-top: 2rem;
+            margin: 2rem 0 2rem 0;
             opacity: 0.3;
-            font-size: 0.875rem;
+            font-size: 10pt;
+        }
+
+        .whitespace {
+            height: 3rem;   
+        }
+
+        button {
+            width: 60%;
         }
        
 }
 
 @media only screen
-    and (min-width: 320px)
+    and (min-width: 568px)
+    and (max-width: 853px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        
+        h1#careerpad_title {
+            font-size: 20pt;
+            text-align: left;
+            padding: 5rem 0 0 0;
+        }
+
+        nav .navWide .wideDiv {
+            text-align: left;
+        }
+
+        nav .navWide .wideDiv a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 0 1rem;
+          }
+
+        .full_container {
+            padding: 1rem;
+        }
+        
+        .right_container{
+            margin: 0 2rem;
+        }
+
+        .main_container {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            padding: 2rem 0 0 0;
+        }
+
+        .two_container {
+            padding: 0;
+        }
+
+        .whitespace {
+            height: 0;
+        }
+
+        button {
+            width: 40%;
+        }
+    }
+
+@media only screen
+    and (min-width: 480px)
     and (max-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
@@ -258,38 +384,49 @@ button:hover {
         .header {
             padding: 1rem 0 0 0;
         }
+
+        nav .navWide .wideDiv a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 0 1rem;
+          }
         
-        .menu {
-            display: flex;
-            flex-direction: column;
-            list-style-type: none;
-            text-align: right;
+        .full_container {
+            margin: 0;
             padding: 0;
         }
-        
-        .menu li{
-            font-family: 'Poppins', sans-serif;
-            font-size: 1rem;
-            margin-left: 1rem;
-            cursor: pointer;
-        }
-        
+
         .main_container {
             display: flex;
             flex-direction: column;
             align-items: stretch;
             padding: 0;
         }
+
+        .right_container{
+            margin: 0 2rem 0 2rem;
+        }
+
+        .two_container {
+            margin: 1rem;
+        }
+
+        button {
+            width: 50%;
+        }
         
+        .register {
+            top: 27.5rem;
+        }
 
         .two_container {
             flex: 1;
             flex-grow: 1;
-            margin: 1rem;
+            margin-bottom: 0;
         }
 
         .contentItem {
-            margin-top: 4rem;
+            margin: 0;
             display: flex;
             flex-direction: column;
         }
@@ -299,25 +436,18 @@ button:hover {
         }
 
         .posterImage {
-            height: 15rem;
-        }
-
-        .register {
-            height: 100%;
-            padding: 0;
-            background-color: #171717;
-        }
-
-        .register span{
-            margin: 5%;
+            height: 20rem;
         }
 
         .footer {
-            visibility: visible;
             text-align: center;
-            margin-top: 2rem;
+            margin: 2rem 0 2rem 0;
             opacity: 0.3;
             font-size: 0.75rem;
+        }
+
+        .whitespace {
+            height: 2rem;
         }
 }
 
@@ -326,6 +456,17 @@ button:hover {
     and (max-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
+        
+        h1#careerpad_title {
+            font-size: 1.5rem;
+            line-height: 150%;
+        }
+
+        
+        .full_container{
+            margin: 0;
+            padding: 0;
+        }
         
         .main_container {
             display: flex;
@@ -338,12 +479,31 @@ button:hover {
             padding: 0.75rem 0 0 0;
         }
 
+        button {
+            width: 100%;
+        }
+
+        .two_container {
+            padding: 0;
+            margin: 0 2rem 0 2rem;
+        }
+
         .two_container .logo {
             display: none;
         }
 
         .two_container .menu{
             width: 160px;
+        }
+
+        .right_container {
+            margin: 0;
+            width: 100%;
+            box-shadow: none;
+        }
+
+        .register {
+            visibility: hidden;
         }
 
 
@@ -364,16 +524,8 @@ button:hover {
             width: 1.5rem;
         }
 
-        .menu {
-            text-align: right;
-        }
-
-        .menu li {
-            margin-top: 1rem;
-        }
-
         .contentItem {
-            margin-top: 4rem;
+            margin-top: 2rem;
             display: flex;
             flex-direction: column;
         }
@@ -386,21 +538,15 @@ button:hover {
             height: 15rem;
         }
 
-        .register {
-            height: 100%;
-            padding: 0;
-            background-color: #171717;
-        }
-
-        .register span{
-            margin: 5%;
-        }
-
         .footer {
             visibility: visible;
             text-align: center;
-            margin-top: 2rem;
+            margin: 2rem 0 2rem 0;
             opacity: 0.3;
             font-size: 0.75rem;
+        }
+
+        .whitespace {
+            height: 0;
         }
 }

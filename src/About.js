@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import rightArrow from './assets/right_arrow.svg'
 
 const About = () => (
-    <div className="main_container">
+    <div className="full_container">
+        <div className="main_container">
                 <div className="two_container">
                     <div className="contentItem">
                         <h1>About</h1>
@@ -22,14 +23,21 @@ const About = () => (
 
                     <div className="smallContentItem">
                         <Link className="link" to="/founder">
+                            <button>
                             <span>Founder</span>
-                            <img src={rightArrow} alt="Right Arrow"/>
+                                <img src={rightArrow} alt="Right Arrow"/>
+                            </button>
                         </Link>
                     </div>
                 </div>
-                <div className="two_container">
-                </div> 
+            <div className="two_container">
+            </div> 
         </div>
+        <div className="footer">
+            CareerPad © 2018 / Photo by Ben O'Sullivan on Unsplash
+        </div>
+    </div>
+    
 );
             
 export default About

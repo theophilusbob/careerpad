@@ -1,7 +1,8 @@
 import React from 'react'
 
 const Mission = () => (
-    <div className="main_container">
+    <div className="full_container">
+        <div className="main_container">
                 <div className="two_container">
                     <div className="contentItem">
                         <h1>Mission</h1>
@@ -27,7 +28,11 @@ const Mission = () => (
                 </div>
                 <div className="two_container">
                     </div>
-            </div>
+        </div>
+        <div className="footer">
+            CareerPad © 2018 / Home page photo by Ben O'Sullivan on Unsplash
+        </div>
+    </div>
 );
             
 export default Mission

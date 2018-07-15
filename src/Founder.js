@@ -4,7 +4,8 @@ import Intan from './assets/founder/intan@2x.png'
 import Teguh from './assets/founder/teguh@2x.png'
 
 const Founder = () => (
-    <div className="main_container">
+    <div className="full_container">
+        <div className="main_container">
                 <div className="two_container">
                     <div className="avatar">
                         <img src={Arief} alt="Arief Avatar"/>
@@ -69,6 +70,10 @@ const Founder = () => (
                     </div>
                 </div>
             </div>
+        <div className="footer">
+            CareerPad © 2018 / Home page photo by Ben O'Sullivan on Unsplash
+        </div>
+    </div>
 );
             
 export default Founder

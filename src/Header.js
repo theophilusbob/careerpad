@@ -1,48 +1,42 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import ResponsiveMenu from 'react-responsive-navbar';
-import './home.css';
 
-const Header = () => (
-    <div className="header">
-        <div className="two_container">
-            <div className="logo"><Link className="link" to="/">CareerPad</Link></div>
-                <div className="logo_lite">
-                    <h1><Link className="link" to="/">C</Link></h1>
-                    <div className="logo_underline"></div>
-                </div>    
-            </div>
 
-        <div className="two_container">
-            <ResponsiveMenu
-                menuOpenButton={ 
-                    <div className="hamburger">
-                        <div className="bar1"></div>
-                        <div className="bar2"></div>
-                        <div className="bar3"></div>
-                    </div>
-                }
-                menuCloseButton={
-                    <div className="hamburger">
-                        <div className="bar1"></div>
-                        <div className="bar2"></div>
-                        <div className="bar3"></div>
-                    </div>
-                }
-                changeMenuOn="768px"
-                    largeMenuClassName=""
-                    smallMenuClassName=""
-                    menu={
-                        <ul className="menu">
-                            <li><NavLink className="link" activeClassName="active" to="/about">About</NavLink></li>                          
-                            <li><NavLink className="link" activeClassName="active" to="/mission">Mission</NavLink></li>
-                            <li><NavLink className="link" activeClassName="active" to="/founder">Founder</NavLink></li>
-                            <li><NavLink className="link" activeClassName="active" to="/how-it-works">How It Works</NavLink></li>
-                        </ul>
-                }
-            />
-        </div>         
-    </div>
-)
+class Header extends Component {
 
-export default Header
+    burgerToggle(){
+        let linksEl = document.querySelector('.narrowLinks');
+		if (linksEl.style.display === 'block') {
+			linksEl.style.display = 'none';
+		} else {
+			linksEl.style.display = 'block';
+		}
+    }
+
+    render(){
+        return (
+            <nav>
+				<div className="navWide">
+					<div className="wideDiv">
+                        <a className="title"href="http://careerpad.id"><h2>CareerPad</h2></a>
+						<NavLink to="/about" className="normal" activeClassName="active" exact>About</NavLink>
+						<NavLink to="/mission" className="normal" activeClassName="active" exact>Mission</NavLink>
+						<NavLink to="/founder" className="normal" activeClassName="active" exact>Founder</NavLink>
+                        <NavLink to="/how-it-works" className="normal" activeClassName="active" exact>How It Works</NavLink>
+					</div>
+				</div>
+				<div className="navNarrow">
+					<i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
+					<div className="narrowLinks">
+                        <Link to="/about" onClick={this.burgerToggle}>About</Link>
+                        <Link to="/mission" onClick={this.burgerToggle}>Mission</Link>
+                        <Link to="/founder" onClick={this.burgerToggle}>Founder</Link>
+                        <Link to="/how-it-works" onClick={this.burgerToggle}>How It Works</Link>
+					</div>
+				</div>
+			</nav>
+        );
+    }
+}
+
+export default Header;

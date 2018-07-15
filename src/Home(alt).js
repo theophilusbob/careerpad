@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import './home.css';
-import firebase from './firebase.js';
-import downArrow from './assets/down_arrow.svg';
-import rightArrow from './assets/right_arrow.svg' 
+import firebase from './firebase.js'; 
 
 
 class Home extends Component {
@@ -18,6 +16,7 @@ class Home extends Component {
           address: ""
         };
       }
+
 
     componentDidMount() {
         const ref = firebase.database().ref("project");
@@ -44,25 +43,13 @@ class Home extends Component {
     render() {
         return (
                 <div>
-                    <div className="full_container">
-                    <div className="right_container">
-                                <div className="posterImage">
-                                    <img alt="Gambar Poster" src={this.state.img_src}/>
-                                </div>
-                                <a href="#careerpad_title">
-                                <div className="register">
-                                    <img alt="down" src={downArrow}/> 
-                                </div>
-                                </a>
-                    </div>
-
                     <div className="main_container">
                         <div className="two_container">
                             <div className="whitespace"></div>
-                            <div className="whitespace"></div>
                             <div className="contentItem"> 
-                            <h1 id="careerpad_title"> {this.state.title} </h1>
+                            <h1> {this.state.title} </h1>
                             </div>
+                            <div className="whitespace"></div>
                             <div className="contentItem"> 
                             </div>
                             
@@ -79,24 +66,29 @@ class Home extends Component {
                             </div>*/
                             }
                         </div>
-                        <div className="two_container">
-                        <div className="whitespace"></div>
+                        <div className="two_container right">
+                            <div className="right_container">
+                                <div className="posterImage">
+                                    <img alt="Gambar Poster" src={this.state.img_src}/>
+                                </div>
+                                <div className="register">
+                                    <span>You can register now for free!</span>
+                                    <br></br>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/intl/id_id/forms/about/">
+                                        <button>I want to join the program</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="whitespace"></div>
                             <h1> Why? </h1>
                             <div className="thickSeparator"></div>
                             <div className="contentItem"> 
                                 <p>{this.state.description}</p>
-                                <a target="_blank" rel="noopener noreferrer" href="https://careerpad.typeform.com/to/fQYz6l">
-                                    <button>
-                                        <span>Register Now</span>
-                                        <img src={rightArrow} alt="Right Arrow"/>
-                                    </button>
-                                </a>
+                            </div>
+                            <div className="footer">
+                                CareerPad©2018
                             </div>
                         </div>
-                    </div>
-                    <div className="footer">
-                                CareerPad © 2018 / Photo by Ben O'Sullivan on Unsplash
-                            </div>
                     </div>
                 </div>
                 
