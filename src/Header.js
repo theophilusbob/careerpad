@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import logo from './assets/logo.svg'
+import bar from './assets/bar.svg'
 
 
 class Header extends Component {
@@ -26,7 +28,14 @@ class Header extends Component {
 					</div>
 				</div>
 				<div className="navNarrow">
-					<i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
+				<div className="logo-mobile">
+					<Link to="/">
+						<img alt="CareerPad" src={logo}/>
+					</Link>
+				</div>
+					<i onClick={this.burgerToggle}>
+						<img src={bar} alt="bar"/>
+					</i>
 					<div className="narrowLinks">
                         <Link to="/about" onClick={this.burgerToggle}>About</Link>
                         <Link to="/mission" onClick={this.burgerToggle}>Mission</Link>

@@ -38,7 +38,6 @@ img.logo {
 /* Navbar CSS*/
 
 nav {
-    width: 100%;
     overflow: hidden;
     padding: 2.5em 2.5em 3em 2.5em;
   }
@@ -56,7 +55,7 @@ nav {
   } 
    nav .navWide .wideDiv {
     font-family: 'Poppins', sans-serif;
-     text-align: center;
+    text-align: center;
   }
 
   nav .navWide .wideDiv a {
@@ -66,20 +65,29 @@ nav {
   }
 
   nav .navNarrow i {
-    float: left;
+    float: right;
     cursor: pointer;
     color: #000;
   }
   nav .navNarrow .narrowLinks {
     display: none;
+    padding: 4rem 0 0 0;
   }
 
   nav .navNarrow .narrowLinks a {
     text-decoration: none;
     display: block;
-    float: left;
-    clear: left;
+    float: right;
+    clear: right;
     padding: 0.5em 0;
+  }
+
+  .logo-mobile {
+      position: absolute;
+  }
+
+  .logo-mobile img{
+      height: 2rem;
   }
   
   @media (min-width: 660px) {
@@ -107,19 +115,6 @@ nav {
     border-bottom: solid 1px #F05456;
     color: #F05456;
   }
-
-.hamburger {
-    cursor: pointer;
-    float: right;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
 
 .full_container {
     display: flex;
@@ -373,6 +368,10 @@ button:hover {
         button {
             width: 40%;
         }
+
+        .posterImage{
+            height: 27.5rem;
+        }
     }
 
 @media only screen
@@ -383,6 +382,10 @@ button:hover {
     
         .header {
             padding: 1rem 0 0 0;
+        }
+        
+        nav {
+            padding: 2rem;
         }
 
         nav .navWide .wideDiv a {
@@ -436,7 +439,7 @@ button:hover {
         }
 
         .posterImage {
-            height: 20rem;
+            height: 21.5rem;
         }
 
         .footer {
@@ -458,11 +461,16 @@ button:hover {
     and (orientation: portrait) {
         
         h1#careerpad_title {
-            font-size: 1.5rem;
+            font-family: 'Source Sans Pro', serif;
+            font-weight: 400;
+            font-size: 16pt;
             line-height: 150%;
         }
 
-        
+        nav {
+            padding: 2rem;
+        }
+    
         .full_container{
             margin: 0;
             padding: 0;
@@ -506,7 +514,6 @@ button:hover {
             visibility: hidden;
         }
 
-
         .two_container .logo_lite {
             text-align: left;
         }
@@ -532,6 +539,10 @@ button:hover {
 
         .smallContentItem {
             margin-bottom: 2rem;
+        }
+
+        .avatar img {
+            margin: 3rem 0 0 0;
         }
 
         .posterImage {

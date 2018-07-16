@@ -28,9 +28,7 @@ const Founder = () => (
                 </div>
                 <div className="two_container">
                     <div className="avatar">
-                    <div className="avatar">
                         <img src={Intan} alt="Intan Avatar"/>
-                    </div>
                     </div>
                     <div className="contentItem">
                         <h1>Intan Andini</h1>
