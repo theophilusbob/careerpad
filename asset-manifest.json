@@ -1,13 +1,15 @@
 {
-  "main.css": "static/css/main.9a39e2dc.css",
-  "main.css.map": "static/css/main.9a39e2dc.css.map",
-  "main.js": "static/js/main.d8a0e288.js",
-  "main.js.map": "static/js/main.d8a0e288.js.map",
+  "main.css": "static/css/main.f7a47375.css",
+  "main.css.map": "static/css/main.f7a47375.css.map",
+  "main.js": "static/js/main.c845f08d.js",
+  "main.js.map": "static/js/main.c845f08d.js.map",
   "static/media/arief@2x.png": "static/media/arief@2x.fc7b9f33.png",
   "static/media/arrow.svg": "static/media/arrow.d2641bda.svg",
   "static/media/background.png": "static/media/background.254f6934.png",
+  "static/media/bar.svg": "static/media/bar.11b8fed1.svg",
   "static/media/down_arrow.svg": "static/media/down_arrow.9bfda430.svg",
   "static/media/intan@2x.png": "static/media/intan@2x.fb32f769.png",
+  "static/media/logo.svg": "static/media/logo.cbbb3981.svg",
   "static/media/right_arrow.svg": "static/media/right_arrow.db9b1135.svg",
   "static/media/teguh@2x.png": "static/media/teguh@2x.690f3a05.png"
 }
