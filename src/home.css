@@ -259,10 +259,17 @@ button:hover {
 }
 
 .footer {
-    margin: 2rem 0 2rem 0;
-    text-align: center;
+    margin: 6rem 0 3rem 2rem;
+    text-align: left;
     opacity: 0.45;
     font-size: 10pt;
+}
+
+.footer .sosmed a{
+    font-size: 12pt;
+    padding-left: 2rem;
+    text-decoration: none;
+
 }
 
 
@@ -305,9 +312,9 @@ button:hover {
         }
 
         .footer {
-            text-align: center;
-            margin: 2rem 0 2rem 0;
-            opacity: 0.3;
+            margin: 6rem 0 3rem 2rem;
+            text-align: left;
+            opacity: 0.45;
             font-size: 10pt;
         }
 
@@ -443,10 +450,10 @@ button:hover {
         }
 
         .footer {
-            text-align: center;
-            margin: 2rem 0 2rem 0;
-            opacity: 0.3;
-            font-size: 0.75rem;
+            margin: 6rem 0 3rem 2rem;
+            text-align: left;
+            opacity: 0.45;
+            font-size: 10pt;
         }
 
         .whitespace {
