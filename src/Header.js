@@ -20,7 +20,7 @@ class Header extends Component {
             <nav>
 				<div className="navWide">
 					<div className="wideDiv">
-                        <a className="title"href="http://careerpad.id"><h2>CareerPad</h2></a>
+                        <a className="title"href="https://careerpad.id"><h2>CareerPad</h2></a>
 						<NavLink to="/about" className="normal" activeClassName="active" exact>About</NavLink>
 						<NavLink to="/mission" className="normal" activeClassName="active" exact>Mission</NavLink>
 						<NavLink to="/founder" className="normal" activeClassName="active" exact>Founder</NavLink>

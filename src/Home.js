@@ -95,8 +95,9 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="footer">
-                                CareerPad © 2018 / Photo by Ben O'Sullivan on Unsplash
-                            </div>
+                        <span>CareerPad © 2018</span>
+                        <span className="sosmed"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/careerpad.id/">Instagram</a></span>
+                    </div>
                     </div>
                 </div>
                 

@@ -22,20 +22,21 @@ const About = () => (
                     </div>
 
                     <div className="smallContentItem">
-                        <Link className="link" to="/founder">
+                        <a target="_blank" rel="noopener noreferrer" href="https://careerpad.typeform.com/to/fQYz6l">
                             <button>
-                            <span>Founder</span>
+                            <span>Register Now</span>
                                 <img src={rightArrow} alt="Right Arrow"/>
                             </button>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             <div className="two_container">
             </div> 
         </div>
         <div className="footer">
-            CareerPad © 2018 / Photo by Ben O'Sullivan on Unsplash
-        </div>
+                        <span>CareerPad © 2018</span>
+                        <span className="sosmed"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/careerpad.id/">Instagram</a></span>
+                    </div>
     </div>
     
 );

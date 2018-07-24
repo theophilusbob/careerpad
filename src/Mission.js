@@ -1,4 +1,5 @@
 import React from 'react'
+import rightArrow from './assets/right_arrow.svg'
 
 const Mission = () => (
     <div className="full_container">
@@ -25,13 +26,22 @@ const Mission = () => (
                         Answer the talent shortage that plague the industry and hinder the digital transformation in Indonesia
                         </p>
                     </div>
+                    <div className="smallContentItem">
+                        <a target="_blank" rel="noopener noreferrer" href="https://careerpad.typeform.com/to/fQYz6l">
+                            <button>
+                            <span>Register Now</span>
+                                <img src={rightArrow} alt="Right Arrow"/>
+                            </button>
+                        </a>
+                    </div>
                 </div>
                 <div className="two_container">
-                    </div>
+                </div>
         </div>
         <div className="footer">
-            CareerPad © 2018 / Home page photo by Ben O'Sullivan on Unsplash
-        </div>
+                        <span>CareerPad © 2018</span>
+                        <span className="sosmed"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/careerpad.id/">Instagram</a></span>
+                    </div>
     </div>
 );
             

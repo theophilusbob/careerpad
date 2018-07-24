@@ -68,9 +68,10 @@ const Founder = () => (
                     </div>
                 </div>
             </div>
-        <div className="footer">
-            CareerPad © 2018 / Home page photo by Ben O'Sullivan on Unsplash
-        </div>
+            <div className="footer">
+                        <span>CareerPad © 2018</span>
+                        <span className="sosmed"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/careerpad.id/">Instagram</a></span>
+                    </div>
     </div>
 );
             
