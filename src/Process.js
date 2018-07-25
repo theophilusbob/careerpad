@@ -59,16 +59,21 @@ const Process = () => (
                             Project Delivery 
                             </p>
                         </div>
-                        <div className="smallContentItem">
-                        <a target="_blank" rel="noopener noreferrer" href="https://careerpad.typeform.com/to/fQYz6l">
-                            <button>
-                            <span>Register Now</span>
-                                <img src={rightArrow} alt="Right Arrow"/>
-                            </button>
-                        </a>
-                    </div>
                     </div> 
             </div>
+            <div className="main_container">
+                <div className="two_container">
+                    <h1>Want to work on exciting projects?</h1>
+                    <a target="_blank" rel="noopener noreferrer" href="https://careerpad.typeform.com/to/fQYz6l">
+                        <button>
+                            <span>Apply Now</span>
+                            <img src={rightArrow} alt="Right Arrow"/>
+                        </button>
+                    </a>
+                </div>
+                <div className="two_container"></div>
+            </div>
+            
             <div className="footer">
                         <span>CareerPad © 2018</span>
                         <span className="sosmed"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/careerpad.id/">Instagram</a></span>

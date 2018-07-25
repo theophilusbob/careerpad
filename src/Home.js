@@ -85,13 +85,14 @@ class Home extends Component {
                             <div className="thickSeparator"></div>
                             <div className="contentItem"> 
                                 <p>{this.state.description}</p>
-                                <a target="_blank" rel="noopener noreferrer" href="https://careerpad.typeform.com/to/fQYz6l">
+                                
+                            </div>
+                            <a target="_blank" rel="noopener noreferrer" href="https://careerpad.typeform.com/to/fQYz6l">
                                     <button>
                                         <span>Register Now</span>
                                         <img src={rightArrow} alt="Right Arrow"/>
                                     </button>
                                 </a>
-                            </div>
                         </div>
                     </div>
                     <div className="footer">

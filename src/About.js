@@ -17,14 +17,14 @@ const About = () => (
                     </div>
                     <div className="contentItem">
                         <p>
-                        Careerpad is created by the industry players, for the advancement of digital ecosystem in the country. 
+                        Careerpad is created by the industry players, for the advancement of digital ecosystem in the country. Have passion in digital industry? 
                         </p>
                     </div>
 
                     <div className="smallContentItem">
                         <a target="_blank" rel="noopener noreferrer" href="https://careerpad.typeform.com/to/fQYz6l">
                             <button>
-                            <span>Register Now</span>
+                            <span>Start Here</span>
                                 <img src={rightArrow} alt="Right Arrow"/>
                             </button>
                         </a>

@@ -6,8 +6,6 @@ body {
     font-family: 'Source Sans Pro', serif;
     line-height: 30px;
     margin: 0;
-    background-image: url("assets/background.png");
-    background-size: cover;
 }
 
 p {
@@ -19,7 +17,7 @@ p {
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    line-height: 140%;
+    line-height: 150%;
     margin: 0;
 }
 
@@ -220,7 +218,7 @@ nav {
     position: absolute;
     width: 5rem;
     height: 5rem;
-    background-color: #171717;
+    background: #000000;
     z-index: 1;
     left: 50%;
     top: 36rem;
