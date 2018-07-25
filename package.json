@@ -1,7 +1,7 @@
 {
-  "homepage": "http://careerpad.id",
+  "homepage": "https://careerpad.id",
   "name": "careerpad",
-  "version": "0.1.0",
+  "version": "2.1.1",
   "private": true,
   "dependencies": {
     "@typeform/embed": "^0.5.10",
