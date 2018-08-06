@@ -12,10 +12,6 @@ class Home extends Component {
           img_src: "",
           title: "",
           description: "",
-          date: "",
-          venue: "",
-          time: "",
-          address: ""
         };
       }
 
@@ -25,18 +21,10 @@ class Home extends Component {
             var img_src = snapshot.child("img_src").val();
             var title = snapshot.child("title").val();
             var description = snapshot.child("description").val();
-            var date = snapshot.child("date").val();
-            var venue = snapshot.child("venue").val();
-            var time = snapshot.child("time").val();
-            var address = snapshot.child("address").val();
 
             this.setState({title});
             this.setState({img_src});
             this.setState({description});
-            this.setState({date});
-            this.setState({venue});
-            this.setState({time});
-            this.setState({address});
           });
           
     }
